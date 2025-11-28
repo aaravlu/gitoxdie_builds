@@ -52,7 +52,9 @@ jobs:
           cp -f .cargo/config.toml gitoxide/.cargo
 
       - name: Build
+        shell: pwsh
         run: |
+          Remove-Item -Force Cargo.lock
           cd gitoxide
           cargo update
           cargo b -r
