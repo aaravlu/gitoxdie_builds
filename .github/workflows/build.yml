@@ -54,8 +54,8 @@ jobs:
       - name: Build
         shell: pwsh
         run: |
-          Remove-Item -Force Cargo.lock
           cd gitoxide
+          Remove-Item -Force Cargo.lock
           cargo update
           cargo b -r
 
