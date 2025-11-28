@@ -42,7 +42,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: GitoxideLabs/gitoxide
-          ref: refs/tags/0.47.0
+          ref: refs/tags/v0.47.0
           path: gitoxide
 
       - name: Copy config file
